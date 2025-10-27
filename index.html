@@ -11,7 +11,7 @@
         margin: 0;
         padding: 0;
         height: 100%;
-        background: #FF00A8;
+        background: #000;
         overflow: hidden;
     }
     .contenedor {
@@ -64,7 +64,7 @@
         z-index: 3;
         width: 25vw;
         height: 25vw;
-        background:#0D999E;
+        background:#FF00A8;
         border: 3px solid white;
         border-radius: 50%;
         display: flex;
@@ -813,7 +813,7 @@ window.__lastSongKey = window.__lastSongKey || "";
 }
 
 
-</style><meta content="#111111" name="msapplication-TileColor"/><style>
+</style><meta content="#FF00A8" name="msapplication-TileColor"/><style>
 /* iOS instruction panel */
 #pwaIosCard{
   position:fixed; left:50%; top:50%; transform:translate(-50%,-50%);
@@ -847,7 +847,7 @@ button.btn-ghost{
 }
 
 
-</style></meta><link href="manifest.webmanifest" rel="manifest"/><meta content="#0D999E" name="theme-color"/>
+</style></meta><link href="manifest.webmanifest" rel="manifest"/><meta content="#FF00A8" name="theme-color"/>
 <style>
 .tv-frame video {
     object-fit: contain !important;
@@ -986,7 +986,7 @@ const playBtn = document.getElementById('playBtn');
     playBtn.addEventListener('click', () => {
         if (isPlaying) {
             audioPlayer.pause();
-            playBtn.style.background = '#0D999E'; // Pausado (azul verdoso) // Pausado (negro)
+            playBtn.style.background = '#FF00A8'; // Pausado (azul verdoso) // Pausado (negro)
             isPlaying = false;
             playBtn.innerHTML = '<svg viewBox="0 0 64 64"><polygon points="16,12 56,32 16,52" /></svg>';
         } else {
