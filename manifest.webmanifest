@@ -1,0 +1,24 @@
+{
+  "name": "Radio Lampa",
+  "short_name": "RadioLampa",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FF00A8",
+  "theme_color": "#FF00A8",
+  "description": "El poder de la música en Radio y Televisión",
+  "icons": [
+    {
+      "src": "https://i.postimg.cc/VNbNzVqB/IMG-20251027-WA0016.jpg",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "https://i.postimg.cc/VNbNzVqB/IMG-20251027-WA0016.jpg",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}
