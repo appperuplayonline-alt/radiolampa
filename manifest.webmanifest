@@ -1,6 +1,6 @@
 {
-  "name": "Radio Lampa",
-  "short_name": "RadioLampa",
+  "name": "Radio TV Lampa",
+  "short_name": "Radio TV Lampa",
   "start_url": "./index.html",
   "display": "standalone",
   "orientation": "portrait",
