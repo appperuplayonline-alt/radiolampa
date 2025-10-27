@@ -5,7 +5,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
-<title>Radio Lampa</title>
+<title>Radio TV Lampa</title>
 <style>
     html, body {
         margin: 0;
@@ -95,8 +95,8 @@
 }
 
     .mensaje-secundario {
-        font-size: 1.8em; /* Radio Lampa más grande */
-        font-weight: 900; /* Radio Lampa mucho más gruesa */
+        font-size: 1.8em; /* Radio TV Lampa más grande */
+        font-weight: 900; /* Radio TV Lampa mucho más gruesa */
         color: #FFFFFF; /* Celeste igual al botón */
         margin-top: 0.2em;
         line-height: 1;
@@ -927,7 +927,7 @@ button.btn-ghost{
 <audio id="audioPlayer" src="https://streaming.hostpannel.lat:8010/stream"></audio>
 <div class="mensaje">
 <span class="scroll-text" style="color:#FFFFFF;">EL PODER DE LA MÚSICA EN RADIO Y TELEVISIÓN</span>
-<div class="mensaje-secundario">Radio Lampa</div>
+<div class="mensaje-secundario">Radio TV Lampa</div>
 </div>
 <div class="boton-rojo" id="btnTV">
 <svg fill="white" height="70%" viewbox="0 0 64 64" width="70%" xmlns="http://www.w3.org/2000/svg">
@@ -1005,7 +1005,7 @@ async function actualizarMetadata() {
         const data = await res.json();
 
         let cancion = "";
-        let artista = "Radio Lampa";
+        let artista = "Radio TV Lampa";
 
         if (data.songtitle) {
             const partes = data.songtitle.split(" - ");
@@ -1053,8 +1053,8 @@ document.getElementById('btnCompartir').addEventListener('click', function(e) {
     e.preventDefault();
     if (navigator.share) {
         navigator.share({
-            title: 'Radio Lampa',
-            text: 'Escucha Radio Lampa en vivo',
+            title: 'Radio TV Lampa',
+            text: 'Escucha y Ve Radio TV Lampa en vivo',
             url: window.location.href
         }).catch(err => console.log('Error al compartir:', err));
     } else {
@@ -1495,9 +1495,9 @@ document.addEventListener('DOMContentLoaded', function() {
     try {
       const artSrc = artworkSrc || (document.querySelector('.logo') ? document.querySelector('.logo').src : '');
       navigator.mediaSession.metadata = new MediaMetadata({
-        title: title || 'Radio Lampa',
+        title: title || 'Radio TV Lampa',
         artist: artist || '',
-        album: 'Radio Lampa',
+        album: 'Radio TV Lampa',
         artwork: artSrc ? [
           { src: artSrc, sizes: '96x96',   type: 'image/png' },
           { src: artSrc, sizes: '192x192', type: 'image/png' },
@@ -1707,7 +1707,7 @@ installButton.addEventListener('click', async () => {
 });
 
 window.addEventListener('appinstalled', () => {
-  console.log('Radio Lampa Radio instalada');
+  console.log('Radio TV Lampa Radio instalada');
 });
 
 if ('serviceWorker' in navigator) {
@@ -1728,11 +1728,11 @@ async function actualizarMetadata() {
         document.getElementById("artista").textContent = partes[0].trim();
         document.getElementById("cancion").textContent = partes[1].trim();
       } else {
-        document.getElementById("artista").textContent = "Radio Lampa";
+        document.getElementById("artista").textContent = "Radio TV Lampa";
         document.getElementById("cancion").textContent = infoData.nowplaying.trim();
       }
     } else {
-      document.getElementById("artista").textContent = "Radio Lampa";
+      document.getElementById("artista").textContent = "Radio TV Lampa";
       document.getElementById("cancion").textContent = "Transmitiendo en vivo...";
     }
 
